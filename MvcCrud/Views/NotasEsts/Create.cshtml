@@ -1,0 +1,83 @@
+﻿@model MvcCrud.Models.NotasEst
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>NotasEst</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Apellido" class="control-label"></label>
+                <input asp-for="Apellido" class="form-control" />
+                <span asp-validation-for="Apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ipn" class="control-label"></label>
+                <input asp-for="Ipn" class="form-control" />
+                <span asp-validation-for="Ipn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Iipn" class="control-label"></label>
+                <input asp-for="Iipn" class="form-control" />
+                <span asp-validation-for="Iipn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Siste" class="control-label"></label>
+                <input asp-for="Siste" class="form-control" />
+                <span asp-validation-for="Siste" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Proyect" class="control-label"></label>
+                <input asp-for="Proyect" class="form-control" />
+                <span asp-validation-for="Proyect" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nf" class="control-label"></label>
+                <input asp-for="Nf" class="form-control" />
+                <span asp-validation-for="Nf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Exci" class="control-label"></label>
+                <input asp-for="Exci" class="form-control" />
+                <span asp-validation-for="Exci" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nfci" class="control-label"></label>
+                <input asp-for="Nfci" class="form-control" />
+                <span asp-validation-for="Nfci" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Excii" class="control-label"></label>
+                <input asp-for="Excii" class="form-control" />
+                <span asp-validation-for="Excii" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nfcii" class="control-label"></label>
+                <input asp-for="Nfcii" class="form-control" />
+                <span asp-validation-for="Nfcii" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
